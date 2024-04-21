@@ -18,7 +18,7 @@ const TodoForm = () => {
 
     const todo = { text };
 
-    const response = await fetch("http://localhost:3000/api/todo", {
+    const response = await fetch("https://project-todo-n9sb.onrender.com/api/todo", {
       method: "POST",
       body: JSON.stringify(todo),
       headers: {

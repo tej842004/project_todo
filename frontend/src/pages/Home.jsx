@@ -10,11 +10,14 @@ const Home = () => {
 
   useEffect(() => {
     const fetchTodos = async () => {
-      const response = await fetch("http://localhost:3000/api/todo", {
-        headers: {
-          authorization: `Bearer ${user.token}`,
-        },
-      });
+      const response = await fetch(
+        "https://project-todo-n9sb.onrender.com/api/todo",
+        {
+          headers: {
+            authorization: `Bearer ${user.token}`,
+          },
+        }
+      );
       const json = await response.json();
 
       if (response.ok) {

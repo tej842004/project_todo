@@ -11,7 +11,7 @@ const TodoDetails = ({ todo }) => {
       return;
     }
 
-    const response = await fetch("http://localhost:3000/api/todo/" + todo._id, {
+    const response = await fetch("https://project-todo-n9sb.onrender.com/api/todo/" + todo._id, {
       method: "DELETE",
       headers: {
         authorization: `Bearer ${user.token}`,
